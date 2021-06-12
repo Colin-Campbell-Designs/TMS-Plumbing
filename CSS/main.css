@@ -1,0 +1,174 @@
+//VARIABLES//
+:root {
+    --primary-color: #F1A464;
+}
+//BASE//
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    Font-Family: 'Lora', Serif;
+    Font-Size: 1.4em;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    line-height: 1.6;
+    Font-Family: 'Roboto', Sans-Serif;
+    Font-Size: 4rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+//COMPONENTS//
+.nav {
+    position: fixed;
+}
+
+.nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 110em;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav__logo-img {
+    height: 4em;
+    width: 2.5em;
+}
+
+.nav__logo-text {
+    font-size: 2em;
+    padding: 0 0.5em;
+    Font-Family: 'Roboto', Sans-Serif;
+}
+
+.nav__links {
+    display: flex;
+    text-transform: uppercase;
+    Font-Family: 'Roboto', Sans-Serif;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav__social {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__social i {
+    font-size: 3rem;
+    margin-left: .5em;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background: url('/Images/header_bg.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__headingBox {
+    height: 40%;
+    max-width: 110em;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: .5em;
+    font-size: 1.4rem;
+    font-weight: 300;
+    Font-Family: 'Roboto', Sans-Serif;
+    
+}
+
+.btn__header {
+    margin-top: 2em;
+}
+
+
+
+//UTILITIES//
+
+
+//TYPEOGORAPHY//
+.primaryHeading {
+    block-size: 0px;
+    margin-top: 0px;
+}
+
+.header__headingBox .primaryHeading,.subHeading  {
+    margin: 0;
+    color: white;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    text-align: center;
+ }
+ 
+ .primaryHeading {
+     font-size: 8rem;
+ }
+ 
+ .header__headingBox h2.subHeading {
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1rem;
+ 
+ } 
+ 
+
+//LAYOUT//
+.main {
+    border: solid red 1em;
+}
