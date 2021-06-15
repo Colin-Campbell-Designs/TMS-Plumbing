@@ -9,17 +9,17 @@
     <title>TMS</title>
 </head>
 <body>
-    <nav class="navigation">
+    <nav id="navigation" class="navigation">
         <div class="nav container">
             <div class="nav__logo">
-                <div class="nav__logo-text">TMS</div>
+                <div class="nav__logo-text">TMS <span class="subLogoText">heating | plumbing | gas</span></div>
                 <img src="Images/flame.png" alt="flame" class="nav__logo-img">
             </div>
             <ul class="nav__links">
-                <li><a href="">about</a></li>
-                <li><a href="">plumbing and heating</a></li>
-                <li><a href="">oil and gas</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#plumbingHeading">plumbing and heating</a></li>
+                <li><a href="#oilGas">oil and gas</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
             <ul class="nav__social">
                 <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -29,91 +29,152 @@
         </div>
     </nav><!--End Navigation-->
 
+    <div id="burger" class="burger__btn ">
+        <div class="line line1"></div>
+        <div class="line line1"></div>
+        <div class="line line1"></div>
+    </div>
+
    
         <header>
-            <div class="header__headingBox">
-                <h1 class="primaryHeading">tms plumbing and heating</h1>
+            <div class="header__headingBox sectionShadowHeader">
+                <h1 class="primaryHeading">tms <br> heating <span class="line">|</span> plumbing <span class="line">|</span> gas</h1>
                 <h2 class="subHeading">providing a first class service</h2>
             </div>
-            <button class="btn btn__header">Get a free quote</button>
         </header><!--End Header-->
     
     <div class="main" id="main">    
-        <section class="about grid" id="about">
-            <div class="about__logo">
-                <img src="" alt="" class="about__flame">
-                <h1 class="about__heading">TMS</h1>
-            </div>
-            <div class="about__textBox">
-                <p class="text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                <p class="text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-            </div>
-            <div class="about__feature">
-                <img class="about__img about__img-p1"></img>
-                <img class="about__img about__img-p2"></img>
-                <img class="about__img about__img-p3"></img>
-            </div>
+        <div class="quote">
+            <div class="quote__text"><a href="#contact">Get A Free Quote Today</a></div>
+            <div class="quote__number"><a href="tel:07426709456">Call 07426709456</a></div>
+        </div>
+        <section class="sectionShadow about" id="about">
+            <div class="section__container">
+                <div class="about__logo">
+                    <img src="Images/flame.png" alt="flame" class="about__flame">
+                    <h1 class="section__header top-heading up">TMS<span class="subLogoText">heating | plumbing | gas</span></h1>
+                </div>
+                <div class="flex-container">
+                    <div class="about__textBox">
+                        <p class="text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                        <p class="text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </div>
+                    <div class="about__feature right">
+                        <img class="about__img about__img-p1" src="Images/warterTap.jpg" alt="water tap">
+                        <img class="about__img about__img-p2" src="Images/bathroom.jpg" alt="bathroom">
+                        <img class="about__img about__img-p3" src="Images/cookingFood.jpg" alt="cooking food">
+                    </div>  
+                </div>
+           </div>
         </section> <!--End About Section-->
     
-        <section id="plumbingHeading">
-            <h1 class="section__header">Plumbing and heating services</h1>
-            <div class="plumbing grid">
-                <div class="pumbing__left">
-                    <img src="" alt="" class="plumbing__img">
-                    <h3 class="plumbing__subHeading">Our plumbing repair services include</h3>
-                    <ul>
-                        <li>Power flushing</li>
-                        <li>Central heating and radiator repairs</li>
-                        <li>Wet room repairs</li>
-                        <li>Leaky taps and burst pipe repairs</li>
-                    </ul>
-                </div>
-                <div class="pumbing__right">
-                    <img src="" alt="" class="plumbing__img">
-                    <h3 class="plumbing__subHeading">A one-stop shop for all plumbing and heating problems</h3>
-                    <p class="section__text">We are one of the leading plumbing and heating companies in Lisburn and provides affordable heating services as well as boiler replacement schemes funded by the government. We can undertake all types of heating and plumbing repairs that you might face. Also, we provide expert advice on central heating and boilers for your home. So what are you waiting for? Get in touch with us today.</p>
+        <section class="section" id="plumbingHeading">
+            <div class="section__container">
+                <h1 class="section__header up">Plumbing and heating services</h1>
+                
+                <div class="plumbing-heating">
+                    <div class="pumbing__left left">
+                        <img src="Images/plumbing-repair.jpeg" alt="pipe repair" class="plumbing__img">
+                        <h3 class="plumbing__subHeading">Our plumbing repair services include</h3>
+                        <ul>
+                            <li>Power flushing</li>
+                            <li>Central heating and radiator repairs</li>
+                            <li>Wet room repairs</li>
+                            <li>Leaky taps and burst pipe repairs</li>
+                        </ul>
+                    </div>
+                    <div class="pumbing__right right">
+                        <img src="images/boiler-repair.jpeg" alt="bolier repair" class="plumbing__img">
+                        <h3 class="plumbing__subHeading">A one-stop shop for all plumbing and heating problems</h3>
+                        <p class="section__text">We are one of the leading plumbing and heating companies in Lisburn and provides affordable heating services as well as boiler replacement schemes funded by the government. We can undertake all types of heating and plumbing repairs that you might face. Also, we provide expert advice on central heating and boilers for your home. So what are you waiting for? Get in touch with us today.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section id="oilGas">
-            <h1 class="section__header">Oil and gas services</h1>
-            <div class="plumbing grid">
-    
+        <section class="marginMinus" id="oilGas">
+            <div class="section__container">
+                <h1 class="section__header up">Oil and gas services</h1>
+                
+                <div class="plumbing-heating">
+                    <div class="pumbing__left left">
+                        <img src="Images/gasFlame.jpg" alt="gas flame" class="plumbing__img">
+                        <h3 class="plumbing__subHeading">Insured services</h3>
+                        <p class="text">All our services are insured for your peace of mind. We cater to both domestic and commercial customers and our services are fairly priced. To find out more about our services, call our experts in Lisburn. You can also contact us if you live anywhere in Belfast.</p>
+                    </div>
+                    <div class="pumbing__right right">
+                        <img src="images/gasboiler .jpeg" alt="bolier repair" class="plumbing__img">
+                        <h3 class="plumbing__subHeading">You can hire our boiler installation services for</h3>
+                            <ul>
+                                <li>Oil boiler installation</li>
+                                <li>Gas boiler installation</li>
+                                <li>Plumbing services</li>
+                                <li>Boiler repairs and maintenance</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+                    <div class="oilGas-intro">
+                        <h2 class="sectionSub__header up">Qualified gas engineers at work</h2>
+                        <p class="text">As a major component of your central heating system, you should always let experienced engineers take care of your boiler. You would be glad to know that all our team members are Gas Safe and OFTEC registered and are experts in repair services too. They can easily install a boiler in your home without causing any disruption to your daily schedule. We install and upgrade all types of oil & gas boilers including Grant oil boilers, Firebird oil boilers, Worcester Bosch gas boilers and Ideal gas boilers. Our Ideal boilers come with a 10 year warranty.</p>
+                    </div>
             </div>
         </section>
     
-        <section id="contact">
-            <h1 class="section__header">Contact</h1>
-            <form action="#">
-                <input type="text" id="name" name="name" placeholder="Name..">
-                <input type="email" id="email" name="email" placeholder="Email..">
-                <input type="number" id="phone" name="phone" placeholder="Phone Number..">
-                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-                <button class="btn btn__submit">Submit</button>
-            </form>
+        <section class="section" id="contact">
+           <div class="section__container">
+                <h1 class="section__header up">Contact</h1>
+               
+                <form action="#" id="form" class="form up">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input name="Name" type="text" id="name" placeholder="Name...">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="name">Email</label>
+                        <input name="Email" type="text" id="email" placeholder="Email...">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="name">Phone</label>
+                        <input name="Phone" type="number" id="phone" placeholder="Phone...">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Leave us a message</label>
+                        <textarea class="form-control" name="Message" id="message" placeholder="Message..."></textarea>
+                        <small>Error Mwssage</small>
+                    </div>
+                    <button type="submit" class="btn btn__submit">Send</button>
+                </form>
+           </div>
         </section>
     </div>
 </div>
 
     <footer class="footer" id="footer">
-        <div class="footer__feature">
-            <img src="" alt="" class="footer__img">
-            <img src="" alt="" class="footer__img">
-            <img src="" alt="" class="footer__img">
+        <div class="footer__container">
+            <div class="footer__feature">
+                <img src="" alt="" class="footer__img">
+                <img src="" alt="" class="footer__img">
+                <img src="" alt="" class="footer__img">
+            </div>
+            <ul class="footer__nav">
+                <li><a href="#about">about</a></li>
+                <li><a href="#plumbingHeading">plumbing and heating</a></li>
+                <li><a href="#oilGas">oil and gas</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <ul class="footer__social">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+            <p class="text">colin campbell web dvelopment</p>
         </div>
-        <ul class="footer__nav">
-            <li><a href="">about</a></li>
-            <li><a href="">plumbing and heating</a></li>
-            <li><a href="">oil and gas</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-        <ul class="footer__social">
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
-        </ul>
-        <p class="text">colin campbell web dvelopment</p>
     </footer>
+
+    <script src="JS/app.js"></script>
 </body>
 </html>
