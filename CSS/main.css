@@ -154,7 +154,7 @@ a {
 header {
     height: 100vh;
     width: 100vw;
-    background: url('/Images/header_bg.jpg') no-repeat;
+    background: url('../Images/header_bg.jpg') no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
